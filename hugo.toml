@@ -1,0 +1,38 @@
+baseURL = "https://lohan2000.github.io/proyecto-portafolio/"
+languageCode = "en-us"
+title = "Mi Portfolio"
+theme = "hugo-PaperMod"
+
+disableFingerprinting = true
+
+[menu]
+  [[menu.main]]
+    identifier = "Persona 1"
+    name = "Anjhelo Vela Yauri"
+    url = "/Anjhelo-vela"
+    weight = 1
+  [[menu.main]]
+    identifier = ""
+    name = "Persona 2"
+    url = "/persona-2/"
+    weight = 2
+  [[menu.main]]
+    identifier = "Persona 3"
+    name = "Persona 3"
+    url = "/persona-3/"
+    weight = 3
+  [[menu.main]]
+    identifier = "Persona 4"
+    name = "Persona 4"
+    url = "/persona-4/"
+    weight = 4
+  [[menu.main]]
+    identifier = "Persona 5"
+    name = "Persona 5"
+    url = "/persona-5/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
