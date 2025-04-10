@@ -14,6 +14,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          persist-credentials: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -24,8 +25,8 @@ jobs:
       - name: Build site
         run: hugo --minify --baseURL "https://LOHAN2000.github.io/proyecto-portafolio/" # Reemplaza con tu URL
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+      -  name: Deploy to GitHub Pages
+         uses: peaceiris/actions-gh-pages@v3
+         with:
+            github_token: ${{ secrets.DEPLOY_TOKEN }}  # Usar el PAT
+            publish_dir: ./public
