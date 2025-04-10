@@ -15,7 +15,7 @@
                             </div>
                             <div class="hero__info-wrapper">
                                 <p class="hero__info-number">20+</p>
-                                <h2 class="hero__info-title">Projects<br>Completed</h2>
+                                <h2 class="hero__info-title">Proyectos<br>Terminados</h2>
                             </div>
                         </div>
                     </div>
