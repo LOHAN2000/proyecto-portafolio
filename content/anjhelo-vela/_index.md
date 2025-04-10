@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Services</h2>
-                    <span class="section__subtitle">What I do</span>
+                    <span class="section__subtitle">¿Que hago?</span>
                 </div>
                 <div class="d-grid-education service__wrapper">
                     <!--= service card 1 =-->

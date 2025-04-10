@@ -13,24 +13,24 @@ disableFingerprinting = true
     weight = 1
   [[menu.main]]
     identifier = ""
-    name = "Persona 2"
-    url = "/persona-2/"
+    name = "Mirella Gavino"
+    url = "/mirella-gavino/"
     weight = 2
   [[menu.main]]
-    identifier = "Persona 3"
-    name = "Persona 3"
-    url = "/persona-3/"
+    identifier = "Carlos Yudiño"
+    name = "Carlos Yudiño"
+    url = "/carlos/"
     weight = 3
   [[menu.main]]
-    identifier = "Persona 4"
-    name = "Persona 4"
-    url = "/persona-4/"
-    weight = 4
+    identifier = "gerardo"
+    name = "Gerardo Campos"
+    url = "/gerardo/"
+    weight = 3
   [[menu.main]]
-    identifier = "Persona 5"
-    name = "Persona 5"
-    url = "/persona-5/"
-    weight = 5
+    identifier = "viter"
+    name = "Viter Rodriguez"
+    url = "/viter/"
+    weight = 3
 
 [markup]
   [markup.goldmark]

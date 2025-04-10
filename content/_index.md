@@ -19,9 +19,11 @@ draft = false
     <ul style="list-style: disc; padding-left: 2rem; text-align: left; display: inline-block; font-size: 1.2rem;">
       <li>Anjhelo Elvis Vela Yauri</li>
       <li>Kelly Mirella Gavino Solis</li>
-      <li>Persona 3</li>
-      <li>Persona 4</li>
-      <li>Persona 5</li>
+      <li>Carlos Yudiño Quispe Qquecaño</li>
+      <li>Gerardo Campos Velasquez</li>
+      <li>Viter Alonso Rodriguez Quispe</li>
     </ul>
   </section>
 </main>
+
+  
