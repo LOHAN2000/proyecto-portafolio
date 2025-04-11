@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerardo Campos - Portafolio</title>
     <style>
         * {
             margin: 0;
@@ -85,20 +90,6 @@
         .pf-skill-item:hover {
             transform: translateY(-3px);
         }
-        .pf-certification-list {
-            margin-top: 2rem;
-            padding-left: 2rem;
-        }
-        .pf-certification-item {
-            margin-bottom: 1rem;
-            position: relative;
-        }
-        .pf-certification-item::before {
-            content: "▹";
-            position: absolute;
-            left: -1.5rem;
-            color: #999;
-        }
         .pf-contact-info {
             background: #111;
             padding: 2rem;
@@ -111,6 +102,95 @@
             padding: 2rem 0;
             margin-top: 4rem;
         }
+        /* Nuevos estilos para la sección de experiencia */
+        .pf-exp-subsection {
+            background: #1a1a1a;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #00ff88;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .pf-exp-subsection:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 255, 136, 0.1);
+        }
+        .pf-subsection-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .pf-subsection-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 1rem;
+            color: #00ff88;
+        }
+        .pf-subsection-title {
+            font-size: 1.4rem;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .pf-timeline-item {
+            display: flex;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 2rem;
+        }
+        .pf-timeline-marker {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #00ff88;
+            border-radius: 50%;
+        }
+        .pf-timeline-content {
+            flex: 1;
+        }
+        .pf-timeline-duration {
+            color: #888;
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+        .pf-university {
+            color: #00ff88;
+            font-weight: 500;
+        }
+        .pf-highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .pf-highlight-card {
+            background: #252525;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .pf-card-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00ff88;
+            margin-bottom: 0.5rem;
+        }
+        .pf-specialization-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        .pf-specialty-item {
+            display: flex;
+            align-items: center;
+            background: #252525;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .pf-specialty-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #00ff88;
+        }
         @media (max-width: 768px) {
             .pf-menu-list {
                 flex-direction: column;
@@ -119,6 +199,12 @@
             }
             .pf-section {
                 padding: 2rem 0;
+            }
+            .pf-exp-subsection {
+                padding: 1.5rem;
+            }
+            .pf-subsection-title {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -136,25 +222,66 @@
         <section id="experiencia" class="pf-section">
             <h2 class="pf-section-title">Trayectoria Profesional</h2>
             <div class="pf-experience-content">
-                <h3 style="color: #fff; margin-bottom: 1rem; font-size: 1.2rem;">Formación Académica</h3>
-                <ul class="pf-certification-list">
-                    <li class="pf-certification-item">
-                        Estudiante de Ingeniería de Sistemas - Universidad Continental (En curso)
-                    </li>
-                </ul>
-                <p>+10 años en el sector Retail liderando equipos multidisciplinarios en:</p>
-                <ul class="pf-certification-list" style="margin: 1.5rem 0;">
-                    <li class="pf-certification-item">Gestión de infraestructuras tecnológicas críticas</li>
-                    <li class="pf-certification-item">Implementación de sistemas bajo estándares ITIL/ISO</li>
-                    <li class="pf-certification-item">Transformación digital de procesos empresariales</li>
-                    <li class="pf-certification-item">Optimización de centros de soporte técnico</li>
-                </ul>
-                <p>Enfoque estratégico en:</p>
-                <ul class="pf-certification-list">
-                    <li class="pf-certification-item">Alta disponibilidad de sistemas</li>
-                    <li class="pf-certification-item">Gestión de servicios orientada al negocio</li>
-                    <li class="pf-certification-item">Arquitecturas escalables y seguras</li>
-                </ul>
+                <div class="pf-exp-subsection">
+                    <div class="pf-subsection-header">
+                        <svg class="pf-subsection-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3m6.82 6L12 12.72L5.18 9L12 5.28L18.82 9M17 16l-5 2.72L7 16v-3.73L12 15l5-2.73V16Z"/>
+                        </svg>
+                        <h3 class="pf-subsection-title">Formación Académica</h3>
+                    </div>
+                    <div class="pf-timeline-item">
+                        <div class="pf-timeline-marker"></div>
+                        <div class="pf-timeline-content">
+                            <h4>Ingeniería de Sistemas</h4>
+                            <p class="pf-timeline-duration">2022 - Actualidad</p>
+                            <p class="pf-university">Universidad Continental</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pf-exp-subsection">
+                    <div class="pf-subsection-header">
+                        <svg class="pf-subsection-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zm-1-4l-1.41-1.41L13 12.17V4h-2v8.17L8.41 9.59L7 11l5 5l5-5z"/>
+                        </svg>
+                        <h3 class="pf-subsection-title">Logros Clave</h3>
+                    </div>
+                    <div class="pf-highlight-grid">
+                        <div class="pf-highlight-card">
+                            <div class="pf-card-number">5+</div>
+                            <h4>Años de Experiencia</h4>
+                            <p>Sector Retail</p>
+                        </div>
+                        <div class="pf-highlight-card">
+                            <div class="pf-card-number">50+</div>
+                            <h4>Proyectos Liderados</h4>
+                            <p>Implementados con éxito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pf-exp-subsection">
+                    <div class="pf-subsection-header">
+                        <svg class="pf-subsection-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                        <h3 class="pf-subsection-title">Especializaciones</h3>
+                    </div>
+                    <div class="pf-specialization-grid">
+                        <div class="pf-specialty-item">
+                            <div class="pf-specialty-icon">✓</div>
+                            <div class="pf-specialty-content">
+                                <h4>Infraestructuras Críticas</h4>
+                                <p>Gestión de sistemas 24/7 para operaciones continuas</p>
+                            </div>
+                        </div>
+                        <div class="pf-specialty-item">
+                            <div class="pf-specialty-icon">✓</div>
+                            <div class="pf-specialty-content">
+                                <h4>Transformación Digital</h4>
+                                <p>Modernización de procesos empresariales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="habilidades" class="pf-section">
