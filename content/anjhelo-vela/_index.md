@@ -11,7 +11,7 @@
                         <div class="hero__info">
                             <div class="hero__info-wrapper">
                                 <p class="hero__info-number">02</p>
-                                <h2 class="hero__info-title">Years<br>Experience</h2>
+                                <h2 class="hero__info-title">Años<br>Experiencia</h2>
                             </div>
                             <div class="hero__info-wrapper">
                                 <p class="hero__info-number">20+</p>
