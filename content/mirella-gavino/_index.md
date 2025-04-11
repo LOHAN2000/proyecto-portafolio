@@ -1,4 +1,271 @@
 <link rel="stylesheet" href="../mirella-gavino/css/custom-mirella.css">
+<style>
+  /* Paleta de colores pastel mejorada */
+  :root {
+    --fondo-principal: #FFF9FB;
+    --fondo-secundario: #FFFFFF;
+    --rosa-pastel: #FFD6E0;
+    --lila-pastel: #E1C6FF;
+    --menta-pastel: #C1F0D0;
+    --azul-pastel: #C6E2FF;
+    --melocoton-pastel: #FFD8B8;
+    --texto-oscuro: #4A4A4A;
+    --texto-medio: #6D6D6D;
+    --texto-claro: #FFFFFF;
+    --acento: #B399D4;
+  }
+  /* Estilos generales */
+  body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-oscuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .custom-container {
+    background-color: var(--fondo-secundario);
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .site-main-wrapper {
+    padding: 20px;
+  }
+  /* Encabezado */
+  header {
+    background: linear-gradient(135deg, var(--rosa-pastel) 0%, var(--lila-pastel) 100%);
+    padding: 2rem 0;
+    color: var(--texto-oscuro);
+  }
+  /* Títulos */
+  h1, h2, h3, h4, h5, h6 {
+    color: #6E5B7B;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  h1 span, .section-heading span {
+    color: #8B7B96;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    color: var(--texto-medio);
+  }
+  h6 {
+    color: var(--acento);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  /* Secciones */
+  section {
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .about {
+    background-color: var(--menta-pastel);
+  }
+  .services {
+    background-color: var(--lila-pastel);
+  }
+  .freelancer {
+    background: linear-gradient(135deg, var(--melocoton-pastel) 0%, var(--rosa-pastel) 100%);
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .reviews {
+    background-color: var(--azul-pastel);
+  }
+  .work {
+    background-color: #F0F8FF;
+  }
+  .blog {
+    background-color: #FFF0F5;
+  }
+  .contact {
+    background-color: var(--lila-pastel);
+    border-bottom: none;
+  }
+  /* Texto */
+  p {
+    color: var(--texto-medio);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  /* Navegación */
+  nav {
+    padding: 1rem 0;
+  }
+  nav a {
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    color: var(--acento);
+  }
+  /* Botones */
+  .btn {
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .btn-primary {
+    background-color: var(--acento);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .btn-primary:hover {
+    background-color: #9F86C0;
+    transform: translateY(-2px);
+  }
+  .btn-secondary {
+    background-color: var(--menta-pastel);
+    color: var(--texto-oscuro);
+    border: 2px solid var(--texto-oscuro);
+  }
+  .btn-secondary:hover {
+    background-color: #B5EAD7;
+    border-color: var(--acento);
+    color: var(--acento);
+  }
+  /* Tarjetas */
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .card-content {
+    padding: 1.5rem;
+  }
+  /* Overlay */
+  .overlay {
+    background-color: rgba(179, 153, 212, 0.85);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  .overlay span {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .overlay a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  /* Social */
+  .social {
+    margin-top: 2rem;
+  }
+  .social a {
+    margin-right: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .social a:hover {
+    transform: scale(1.1);
+  }
+  .social img {
+    width: 40px;
+    height: 40px;
+  }
+  /* Mobile Nav */
+  .mobile-nav {
+    background-color: rgba(255, 255, 255, 0.98);
+  }
+  .mobile-nav ul li a {
+    color: var(--texto-oscuro);
+  }
+  /* Hero Section */
+  .hero {
+    padding: 3rem 0;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .btn {
+      padding: 0.7rem 1.5rem;
+    }
+  }
+</style>
+<style>
+  /* ... (conserva todos los estilos anteriores) ... */
+  /* Específicos para la sección de servicios */
+  .services .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .services .card {
+    width: 300px; /* Ancho fijo para las tarjetas */
+    text-align: center;
+  }
+  .services .card img {
+    width: 120px; /* Tamaño reducido para las imágenes */
+    height: 120px;
+    object-fit: contain;
+    margin: 1.5rem auto;
+    display: block;
+    border-bottom: none !important;
+  }
+  .services .card h2 {
+    color: var(--acento);
+    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+  .services .card p {
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  /* Ajustes para móviles */
+  @media (max-width: 768px) {
+    .services .card {
+      width: 100%;
+      max-width: 300px;
+    }
+    .services .card-wrapper {
+      gap: 1.5rem;
+    }
+  }
+</style>
+
+<!-- [El resto del código HTML permanece exactamente igual] -->
 
 <div class="custom-container" style="width: 90%;"> 
   <body>
