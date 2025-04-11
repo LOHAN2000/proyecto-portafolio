@@ -7,7 +7,7 @@
                 <div class="d-grid hero__wrapper">
                     <div class="hero__content">
                         <h1 class="hero__title">Hola, soy Anjhelo Elvis Vela Yauri,<br>Web Developer.</h1>
-                        <p class="hero__description">Hola mi nombre es Anjhelo Elvis Vela Yauri, soy desarrollador Full-Stack. Soy un apasionado por las nuevas tecnologias y los diseños Interactivos.</p>
+                        <p class="hero__description">Hola mi nombre es Anjhelo Elvis Vela Yauri, soy desarrollador FullStack. Soy un apasionado por las nuevas tecnologias y los diseños Interactivos.</p>
                         <div class="hero__info">
                             <div class="hero__info-wrapper">
                                 <p class="hero__info-number">02</p>
@@ -102,7 +102,7 @@
             <section id="service" class="section service" style="width: 70%;">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Services</h2>
+                    <h2 class="section__title">Servicios</h2>
                     <span class="section__subtitle">¿Que hago?</span>
                 </div>
                 <div class="d-grid-education service__wrapper">
