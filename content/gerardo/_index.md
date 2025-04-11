@@ -207,6 +207,75 @@
                 font-size: 1.2rem;
             }
         }
+        .pf-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .pf-skill-item {
+            background: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .pf-skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.15);
+            border-color: #00ff88;
+        }
+        .pf-skill-item::before {
+            content: "▹";
+            position: absolute;
+            left: 1rem;
+            color: #00ff88;
+            font-size: 1.2rem;
+        }
+        /* Nuevos estilos para Contacto */
+        .pf-contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .pf-contact-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .pf-contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.15);
+        }
+        .pf-contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #00ff88;
+        }
+        .pf-contact-details {
+            margin-top: 1.5rem;
+        }
+        .pf-contact-details p {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .pf-skill-item {
+                padding: 1.2rem;
+            }
+            .pf-contact-card {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -285,22 +354,59 @@
             </div>
         </section>
         <section id="habilidades" class="pf-section">
-            <h2 class="pf-section-title">Competencias Técnicas</h2>
-            <div class="pf-skills-grid">
-                <div class="pf-skill-item">Gestión de Servicios TI</div>
-                <div class="pf-skill-item">Infraestructura Cloud</div>
-                <div class="pf-skill-item">Seguridad de Sistemas</div>
-                <div class="pf-skill-item">Gestión de Proyectos</div>
-                <div class="pf-skill-item">Service Desk Enterprise</div>
+        <h2 class="pf-section-title">Competencias Técnicas</h2>
+        <div class="pf-skills-grid">
+            <div class="pf-skill-item">
+                Gestión de Servicios TI
+                <div class="pf-skill-progress">
+                    <div class="pf-progress-bar" style="width: 95%"></div>
+                </div>
             </div>
-        </section>
-        <section id="contacto" class="pf-section">
-            <h2 class="pf-section-title">Contacto</h2>
-            <div class="pf-contact-info">
-                <p>📧 43303380@continental.edu.pe</p>
-                <p style="margin-top: 1rem;">✆ +51 955751813</p>
+            <div class="pf-skill-item">
+                Infraestructura Cloud
+                <div class="pf-skill-progress">
+                    <div class="pf-progress-bar" style="width: 85%"></div>
+                </div>
             </div>
-        </section>
+            <div class="pf-skill-item">
+                Seguridad de Sistemas
+                <div class="pf-skill-progress">
+                    <div class="pf-progress-bar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="pf-skill-item">
+                Gestión de Proyectos
+                <div class="pf-skill-progress">
+                    <div class="pf-progress-bar" style="width: 88%"></div>
+                </div>
+            </div>
+            <div class="pf-skill-item">
+                Service Desk Enterprise
+                <div class="pf-skill-progress">
+                    <div class="pf-progress-bar" style="width: 92%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="pf-section">
+        <h2 class="pf-section-title">Contacto</h2>
+        <div class="pf-contact-grid">
+            <div class="pf-contact-card">
+                <div class="pf-contact-icon">📧</div>
+                <h3>Correo Electrónico</h3>
+                <div class="pf-contact-details">
+                    <p>43303380@continental.edu.pe</p>
+                </div>
+            </div>
+            <div class="pf-contact-card">
+                <div class="pf-contact-icon">📱</div>
+                <h3>Teléfono</h3>
+                <div class="pf-contact-details">
+                    <p>+51 955751813</p>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 </body>
 </html>
