@@ -33,7 +33,7 @@
 # <span style="color:#f39c12;">🚀Hola! soy Carlos Yudiño</span>
 <!-- Apartado para la foto -->
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="../persona-3/static/img/carlos-yudiño.jpeg" alt="Foto de Carlos Yudiño" style="max-width: 200px; border-radius: 10%; border: 3px solid #f39c12;">
+  <img src="../carlos/static/img/carlos-yudiño.jpeg" alt="Foto de Carlos Yudiño" style="max-width: 200px; border-radius: 10%; border: 3px solid #f39c12;">
 </div>
 
 <span style="color:#f39c12;">
@@ -43,6 +43,29 @@
 ---
 
 ## <span style="color:#f39c12;">🛠️ Skill-Set</span>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #e67e22; color: white; font-size: 1.4em;">JavaScript</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #2980b9; color: white; font-size: 1.2em;">Python</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #e67e22; color: white; font-size: 1.4em;">React</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #2ecc71; color: white; font-size: 1em;">Machine Learning</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #2980b9; color: white; font-size: 1.2em;">Node.js</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #e67e22; color: white; font-size: 1.4em;">Git</span>
+</div>
+
+## <span style="color:#f39c12;">📈 Nivel de Dominio Técnico</span>
+
+<div style="background: #e0e0e0; border-radius: 10px; padding: 3px; margin: 10px 0;">
+  <div style="width: 90%; background: #f39c12; border-radius: 8px; padding: 5px; color: white; text-align: right;">JavaScript 90%</div>
+</div>
+
+<div style="background: #e0e0e0; border-radius: 10px; padding: 3px; margin: 10px 0;">
+  <div style="width: 75%; background: #2980b9; border-radius: 8px; padding: 5px; color: white; text-align: right;">Python 75%</div>
+</div>
+
+<div style="background: #e0e0e0; border-radius: 10px; padding: 3px; margin: 10px 0;">
+  <div style="width: 85%; background: #2ecc71; border-radius: 8px; padding: 5px; color: white; text-align: right;">React 85%</div>
+</div>
 
 ### <span style="color:#f39c12;">📌 Control de Versiones Git</span>
 Gestión de código fuente y colaboración en proyectos con Git y plataformas como GitHub.
