@@ -92,7 +92,7 @@
                     <div class="card">
                         <img src="../mirella-gavino/static/img/atc.png" alt="">
                         <h2>Atencion al Cliente</h2>
-                        <p> Identificación de oportunidades para aumentar la satisfacción y retención de clientes.
+                        <p> Identificación de oportunidades para  la satisfacción y retención de clientes.
                         </p>
                     </div>  
                 </div>
