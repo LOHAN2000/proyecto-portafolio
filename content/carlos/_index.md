@@ -44,6 +44,15 @@
 
 ## <span style="color:#f39c12;">🛠️ Skill-Set</span>
 
+<div style="text-align: center; margin: 2rem 0;">
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #e67e22; color: white; font-size: 1.4em;">JavaScript</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #2980b9; color: white; font-size: 1.2em;">Python</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #e67e22; color: white; font-size: 1.4em;">React</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #2ecc71; color: white; font-size: 1em;">Machine Learning</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #2980b9; color: white; font-size: 1.2em;">Node.js</span>
+  <span style="display: inline-block; margin: 5px; padding: 8px 15px; border-radius: 20px; background: #e67e22; color: white; font-size: 1.4em;">Git</span>
+</div>
+
 ### <span style="color:#f39c12;">📌 Control de Versiones Git</span>
 Gestión de código fuente y colaboración en proyectos con Git y plataformas como GitHub.
 
