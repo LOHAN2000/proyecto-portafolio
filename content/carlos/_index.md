@@ -125,6 +125,36 @@ Aplicación que mejora el rendimiento de infraestructuras de TI con recomendacio
 
 ---
 
+---
+
+## <span style="color:#f39c12;">🏅 Certificaciones Relevantes</span>
+
+<div style="border: 2px solid #f39c12; border-radius: 10px; padding: 15px; margin: 20px 0; background: rgba(243, 156, 18, 0.05);">
+  <!-- Certificación 1 -->
+  <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0; padding: 12px; border-radius: 8px; background: rgba(255, 255, 255, 0.05);">
+    <span style="background: #f39c12; color: white; padding: 10px 15px; border-radius: 5px; font-size: 1.3em;">🚀</span>
+    <div>
+      <strong style="color: #f39c12; font-size: 1.1em;">Frontend Development Professional</strong><br>
+      <em style="color: #ffffffcc; font-size: 0.95em;">Meta | 2024</em>
+      <p style="margin: 5px 0 0 0; color: #ffffffaa;">Especialización en desarrollo de aplicaciones modernas con React</p>
+    </div>
+  </div>
+
+  <!-- Certificación 2 -->
+  <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0; padding: 12px; border-radius: 8px; background: rgba(255, 255, 255, 0.05);">
+    <span style="background: #2980b9; color: white; padding: 10px 15px; border-radius: 5px; font-size: 1.3em;">🔒</span>
+    <div>
+      <strong style="color: #f39c12; font-size: 1.1em;">Cybersecurity Analyst</strong><br>
+      <em style="color: #ffffffcc; font-size: 0.95em;">IBM SkillsBuild | 2023</em>
+      <p style="margin: 5px 0 0 0; color: #ffffffaa;">Gestión de vulnerabilidades y análisis de riesgos</p>
+    </div>
+  </div>
+
+  <!-- Add more certifications here -->
+</div>
+
+
+
 ## <span style="color:#f39c12;">📬 Connect with Me</span>
 
 - *Email:* [carlosdraxler8@gmail.com](mailto:carlosdraxler8@gmail.com)  
