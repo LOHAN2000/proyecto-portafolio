@@ -33,7 +33,7 @@
 # <span style="color:#f39c12;">🚀Hola! soy Carlos Yudiño</span>
 <!-- Apartado para la foto -->
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="../persona-3/static/img/carlos-yudiño.jpeg" alt="Foto de Carlos Yudiño" style="max-width: 200px; border-radius: 10%; border: 3px solid #f39c12;">
+  <img src="../carlos/static/img/carlos-yudiño.jpeg" alt="Foto de Carlos Yudiño" style="max-width: 200px; border-radius: 10%; border: 3px solid #f39c12;">
 </div>
 
 <span style="color:#f39c12;">
