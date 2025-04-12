@@ -24,13 +24,12 @@ jobs:
       - name: Build site
         run: hugo --minify --baseURL "https://LOHAN2000.github.io/proyecto-portafolio/"
 
-      # === Paso nuevo: Validación HTML ===
+      # Validación HTML usando el validador W3C (versión corregida)
       - name: Validate HTML
-        uses: Wakeful/html-validator-action@v2
+        uses: cycle/html-validator-action@v2.0.0
         with:
           directory: "public"
           pattern: "**/*.html"
-          validator: "https://validator.w3.org/nu/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
