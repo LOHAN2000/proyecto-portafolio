@@ -21,7 +21,6 @@ draft = false
       <li>Kelly Mirella Gavino Solis</li>
       <li>Carlos Yudiño Quispe Qquecaño</li>
       <li>Gerardo Campos Velasquez</li>
-      <li>Viter Alonso Rodriguez Quispe</li>
     </ul>
   </section>
 </main>
