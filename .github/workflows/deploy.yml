@@ -24,12 +24,11 @@ jobs:
       - name: Build site
         run: hugo --minify --baseURL "https://LOHAN2000.github.io/proyecto-portafolio/"
 
-      # Validación HTML usando el validador W3C (versión corregida)
+      # Validación HTML con W3C usando Docker
       - name: Validate HTML
-        uses: cycle/html-validator-action@v2.0.0
+        uses: docker://henrywhitaker3/w3c-html-validator
         with:
-          directory: "public"
-          pattern: "**/*.html"
+          args: "--verbose --exit-code 1 public/*.html"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
