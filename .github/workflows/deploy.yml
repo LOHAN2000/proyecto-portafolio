@@ -24,11 +24,23 @@ jobs:
       - name: Build site
         run: hugo --minify --baseURL "https://LOHAN2000.github.io/proyecto-portafolio/"
 
-      # Validación HTML con W3C usando Docker
+      # Validación HTML usando el servicio W3C
       - name: Validate HTML
-        uses: docker://henrywhitaker3/w3c-html-validator
-        with:
-          args: "--verbose --exit-code 1 public/*.html"
+        run: |
+          find public -name "*.html" | while read file; do
+            echo "Validando $file..."
+            STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+              -H "Content-Type: text/html; charset=utf-8" \
+              --data-binary "@$file" \
+              "https://validator.w3.org/nu/?out=json")
+            
+            if [ "$STATUS_CODE" -ne 200 ]; then
+              echo "❌ Error validando $file (Código: $STATUS_CODE)"
+              exit 1
+            else
+              echo "✅ $file válido"
+            fi
+          done
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
