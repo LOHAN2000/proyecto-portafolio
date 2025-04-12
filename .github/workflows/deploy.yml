@@ -2,8 +2,7 @@ name: Deploy Hugo Site to GitHub Pages
 
 on:
   push:
-    branches:
-      - main   
+    branches: [main]
 
 jobs:
   build-and-deploy:
@@ -19,14 +18,22 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.125.7' 
-          extended: true 
+          hugo-version: '0.125.7'
+          extended: true
 
       - name: Build site
-        run: hugo --minify --baseURL "https://LOHAN2000.github.io/proyecto-portafolio/" 
+        run: hugo --minify --baseURL "https://LOHAN2000.github.io/proyecto-portafolio/"
 
-      -  name: Deploy to GitHub Pages
-         uses: peaceiris/actions-gh-pages@v3
-         with:
-            github_token: ${{ secrets.DEPLOY_TOKEN }} 
-            publish_dir: ./public
+      # === Paso nuevo: Validación HTML ===
+      - name: Validate HTML
+        uses: Wakeful/html-validator-action@v2
+        with:
+          directory: "public"
+          pattern: "**/*.html"
+          validator: "https://validator.w3.org/nu/"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
